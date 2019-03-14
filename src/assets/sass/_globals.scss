@@ -1,0 +1,21 @@
+$maxWidth: 1380px;
+$narrowGutter: 30px;
+$wideGutter: 100px;
+$extraWideGutter: calc(#{$wideGutter} * 2);
+
+html,
+body {
+  height: 100%;
+  font-weight: 100;
+  line-height: 24px;
+}
+
+html {
+  background: $paleYellow;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

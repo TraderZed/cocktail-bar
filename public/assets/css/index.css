@@ -1,0 +1,361 @@
+@import url(./normalize.css);
+/* -----------------------
+  Colors
+-------------------------*/
+/* -----------------------
+  Fonts
+-------------------------*/
+@import url("https://use.typekit.net/rpz3nyz.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.open-sans {
+  font-family: "Open Sans", sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  line-height: 1; }
+
+h2 {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px; }
+  h2 a {
+    color: #000;
+    text-decoration: none; }
+  h2 .le-swan-header__box-subtitle {
+    font-size: 14px;
+    font-weight: 100;
+    text-transform: none;
+    letter-spacing: 0; }
+
+h3 {
+  font-size: 46px;
+  margin: 0 0 30px;
+  letter-spacing: 1px; }
+  h3 span {
+    display: block;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 10px 0 0; }
+
+h4 {
+  font-size: 28px; }
+
+h5 {
+  position: relative;
+  font-size: 36px;
+  margin-bottom: 60px;
+  text-align: center; }
+  h5::after, h5::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 50px;
+    width: 50px; }
+  h5::after {
+    background: transparent url(../images/embelishment_right.png) 0 0 no-repeat;
+    right: 0; }
+  h5::before {
+    background: transparent url(../images/embelishment_left.png) 0 0 no-repeat;
+    left: 0; }
+
+h6 {
+  font-size: 26px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 20px; }
+
+p {
+  font-size: 18px;
+  margin: 0 0 60px 0; }
+
+.le-swan-header__subtitle {
+  display: block;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px; }
+
+html,
+body {
+  height: 100%;
+  font-weight: 100;
+  line-height: 24px; }
+
+html {
+  background: #fffffa; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.le-swan-header {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 1380px; }
+  .le-swan-header h1 {
+    background: url(../images/logo.png) center no-repeat;
+    background-size: contain;
+    height: 99px;
+    width: 121px;
+    text-indent: -99999px; }
+
+.le-swan-header__box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+  .le-swan-header__box .le-swan-header__box-subtitle {
+    padding-top: 15px;
+    display: block; }
+
+.le-swan-section {
+  background: #fffffa url(../images/band.png) 0 bottom repeat-x;
+  background-blend-mode: multiply; }
+  .le-swan-section .le-swan-section_inner {
+    margin: 0 auto;
+    padding: 30px 30px 100px;
+    max-width: 1380px; }
+  .le-swan-section__masthead {
+    background: #fffffa; }
+    .le-swan-section__masthead img {
+      mix-blend-mode: multiply;
+      width: 100%; }
+  .le-swan-section__intro .le-swan-section_inner, .le-swan-section__menu .le-swan-section_inner, .le-swan-section__wine .le-swan-section_inner {
+    padding-left: 100px;
+    padding-right: 100px;
+    max-width: calc(1380px - 100px); }
+  .le-swan-section__intro .le-swan-section_inner {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: calc(100px * 2); }
+  .le-swan-section__people {
+    background: none;
+    padding-bottom: calc(100px * 2); }
+    .le-swan-section__people .le-swan-section_inner {
+      padding: 0 calc(100px * 2);
+      max-width: calc(1380px - calc(100px * 2)); }
+
+.le-swan-section__intro .le-swan-section__intro-left {
+  padding-right: 10%;
+  width: 50%; }
+
+.le-swan-section__intro .le-swan-section__intro-right {
+  margin-left: auto;
+  padding: 50px 10px;
+  width: 40%; }
+  .le-swan-section__intro .le-swan-section__intro-right li {
+    margin-bottom: 90px; }
+    .le-swan-section__intro .le-swan-section__intro-right li a {
+      color: #000;
+      text-decoration: none; }
+    .le-swan-section__intro .le-swan-section__intro-right li:last-child {
+      margin: 0; }
+    .le-swan-section__intro .le-swan-section__intro-right li .le-swan-header__subtitle {
+      padding-top: 10px;
+      line-height: 24px; }
+
+.le-swan-menu__list-item-name {
+  font-size: 24px;
+  padding-right: 10px; }
+
+.le-swan-menu__list-item-price {
+  font-size: 16px; }
+
+.le-swan-menu {
+  margin-bottom: 75px; }
+  .le-swan-menu .le-swan-menu__list li {
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    width: calc(50% - 30px);
+    padding: 0 30px 0 0;
+    margin-bottom: 25px; }
+    .le-swan-menu .le-swan-menu__list li:nth-child(even) {
+      padding: 0 0 0 30px;
+      flex-direction: row-reverse; }
+      .le-swan-menu .le-swan-menu__list li:nth-child(even) .le-swan-menu__list-item-name {
+        padding: 0 0 0 10px;
+        text-align: right; }
+      .le-swan-menu .le-swan-menu__list li:nth-child(even)::before {
+        content: "\\";
+        position: absolute;
+        left: -4px; }
+  .le-swan-menu__milkshakes {
+    width: 35%; }
+    .le-swan-menu__milkshakes .le-swan-menu__list li {
+      display: inline-flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      width: 100%; }
+      .le-swan-menu__milkshakes .le-swan-menu__list li .le-swan-menu__list-item-name {
+        padding: 0 0 0 10px;
+        text-align: right; }
+      .le-swan-menu__milkshakes .le-swan-menu__list li:nth-child(even) {
+        padding: 0; }
+        .le-swan-menu__milkshakes .le-swan-menu__list li:nth-child(even)::before {
+          content: ""; }
+    .le-swan-menu__milkshakes .le-swan-menu__headers {
+      justify-content: flex-end; }
+  .le-swan-menu__fondue {
+    margin-right: auto;
+    padding-right: 10%;
+    width: 55%; }
+    .le-swan-menu__fondue h3 {
+      margin: 0;
+      padding: 80px 0; }
+
+.le-swan-section__wine .le-swan-menu__image {
+  margin-left: -315px;
+  width: 450px; }
+  .le-swan-section__wine .le-swan-menu__image img {
+    mix-blend-mode: multiply; }
+
+.le-swan-section__wine .le-swan-menu__sparkling-wine {
+  width: 47%; }
+
+.le-swan-section__wine .le-swan-menu__list {
+  margin-bottom: 75px; }
+  .le-swan-section__wine .le-swan-menu__list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    width: 100%; }
+    .le-swan-section__wine .le-swan-menu__list li .le-swan-menu__list-item-name span {
+      padding-top: 5px;
+      display: block;
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+
+.le-swan-menu__list {
+  margin: 20px 0;
+  padding: 0;
+  list-style: none; }
+
+.le-swan-menu--two-column {
+  display: flex;
+  justify-content: space-between; }
+  .le-swan-menu--two-column > div {
+    width: 47%; }
+
+.le-swan-menu--two-column-odd {
+  display: flex;
+  flex-direction: row-reverse; }
+
+.le-swan-menu__headers {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-bottom: 1px solid #000; }
+  .le-swan-menu__headers:before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    border-bottom: 1px solid #000;
+    width: 100%; }
+
+.le-swan-section__people-person {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px; }
+  .le-swan-section__people-person .le-swan-section__people-image {
+    background: #fffffa; }
+    .le-swan-section__people-person .le-swan-section__people-image img {
+      mix-blend-mode: multiply; }
+  .le-swan-section__people-person .le-swan-section__people-copy {
+    padding: 0 0 0 100px; }
+  .le-swan-section__people-person:nth-child(odd) {
+    flex-direction: row-reverse; }
+    .le-swan-section__people-person:nth-child(odd) .le-swan-section__people-copy {
+      padding: 0 100px 0 0; }
+
+.le-swan__callout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #000;
+  padding: 10px;
+  position: relative;
+  z-index: 0; }
+  .le-swan__callout:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 1px solid #000;
+    z-index: -1; }
+
+@media only screen and (max-width: 1024px) {
+  .le-swan-section__people .le-swan-section_inner {
+    padding: 0 100px; } }
+
+@media only screen and (max-width: 900px) {
+  .le-swan-header {
+    flex-direction: column; }
+    .le-swan-header h1 {
+      order: -1;
+      margin: 80px 0; }
+    .le-swan-header .le-swan-header__box {
+      flex: 0 0 auto; }
+  .le-swan-section .le-swan-section_inner {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: calc(1380px - 30px); }
+  .le-swan-section__intro .le-swan-section_inner {
+    display: block; }
+    .le-swan-section__intro .le-swan-section_inner .le-swan-section__intro-left,
+    .le-swan-section__intro .le-swan-section_inner .le-swan-section__intro-right {
+      width: calc(100% - 30px); }
+  .le-swan-menu .le-swan-menu__list li {
+    width: 100%; }
+    .le-swan-menu .le-swan-menu__list li:nth-child(even) {
+      padding: 0;
+      flex-direction: row; }
+      .le-swan-menu .le-swan-menu__list li:nth-child(even) .le-swan-menu__list-item-name {
+        padding: 0 0 0 0; }
+      .le-swan-menu .le-swan-menu__list li:nth-child(even)::before {
+        content: ""; }
+  .le-swan-menu__milkshakes {
+    width: 100%; }
+    .le-swan-menu__milkshakes .le-swan-menu__headers {
+      justify-content: flex-start; }
+    .le-swan-menu__milkshakes .le-swan-menu__list li {
+      width: 100%;
+      flex-direction: row; }
+      .le-swan-menu__milkshakes .le-swan-menu__list li .le-swan-menu__list-item-name {
+        padding: 0 0 0 0; }
+  .le-swan-section__wine .le-swan-menu__image {
+    display: none; }
+  .le-swan-section__wine .le-swan-menu__sparkling-wine {
+    width: 100%; }
+  .le-swan-menu__fondue {
+    width: calc(100% - 30px); }
+  .le-swan-menu--two-column-odd {
+    display: block; }
+  .le-swan-menu--two-column {
+    display: block; }
+    .le-swan-menu--two-column > div {
+      width: 100%; }
+  .le-swan-section__people-person {
+    border-bottom: 1px solid #000; }
+    .le-swan-section__people-person .le-swan-section__people-image {
+      display: none; }
+    .le-swan-section__people-person .le-swan-section__people-copy {
+      padding: 0; }
+    .le-swan-section__people-person:nth-child(odd) .le-swan-section__people-copy {
+      padding: 0; } }

@@ -1,0 +1,23 @@
+{
+  "name": "zackginies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zack Ginies",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "latest",
+    "babel-preset-env": "^1.7.0",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-sass": "latest",
+    "gulp-terser": "latest"
+  },
+  "dependencies": {
+    "gulp-haml": "latest"
+  }
+}

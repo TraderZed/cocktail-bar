@@ -1,0 +1,97 @@
+%html
+  %head
+    %meta{charset: "utf-8"}
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
+    %meta{name: "description", content: ""}
+
+    %title Cocktail Bar
+    %link{rel: "stylesheet", type: "text/css", media: "all", href: "public/assets/css/index.css"}
+
+    %body
+      %header
+        %nav
+          %ul
+            %li
+              %a{href: "#"} The Black Hoof
+            %li
+              %a{href: "#"} Cocktail Bar
+            %li
+              %a{href: "#"} Rhum Corner
+        .content
+          %h1 The Black Hoof
+          %h4.js-copy-ticker
+      %section.hoof-info
+        .content
+          .hoof-info-left
+            %h1 drink well.
+            %p Our take on what a cocktail bar should be. Classic and modern libations, addictive bar snacks and a beautiful environment. We also have a nice wine and beer list, but you should probably have a cocktail.
+            %h2 Come drink.
+            %address
+              923 Dundas Street West
+              %br
+              Toronto ON M6J 1W3
+              %br
+              %br
+              416 792 7511
+            %p (before you contact us, you should know that we don't take reservations)
+          .hoof-info-right
+            %h2 Cocktail Hours
+            %table.hoof-info-hours
+            .hoof-info-links
+              %a{href: "#", class: "btn"} What am i drinking
+              %br
+              %a{href: "#", class: "btn"} Where is this place
+              %br
+              %a{href: "#", class: "btn"} Does this place have food
+      %section.hoof-menu-drinks
+        .content
+          .hoof-menu-cocktails
+            %h2 Libations
+            %p Again, this tasty drink list is fairly accurate, but we can't promise that the drinks listed here will necessarily be available by the time you make it in.
+          .cocktail-bar-menu__seasonal
+            %h3 Seasonal
+            %ul.cocktail-bar-menu__list
+          .cocktail-bar-menu__easy-drinking
+            %h3 Easy Drinking
+            %ul.cocktail-bar-menu__list
+          .cocktail-bar-menu__mainstays
+            %h3 Mainstays
+            %ul.cocktail-bar-menu__list
+          .cocktail-bar-menu__contemporary
+            %h3 Contemporary
+            %ul.cocktail-bar-menu__list
+      %section.hoof-menu-snacks
+        .content
+          .section-header
+            %h2 Snacks
+            %p We try our best to keep this up to date but we aren't making any promises.
+            %ul.hoof-menu-snacks-list
+      %footer
+        .content
+          .footer-left
+            %h2 Drop by.
+            %p.js-copy-footer-content
+            %a{href: "https://maps.google.ca/maps/ms?msid=213377805080905058298.0004d4e81008db5d21557&msa=0", class: "btn", target: "blank"} Google Map
+          %address.hoof
+            %h3 The Black Hoof
+            928 Dundas St. West
+            %br
+            Toronto ON M6J 1W3
+            %br
+            416 551 8854
+          %address.cocktail
+            %h3 Hoof Cocktail Bar
+            923 Dundas St. West
+            %br
+            Toronto ON M6J 1W2
+            %br
+            416 792 7511
+          %address.rhum
+            %h3 Rhum Corner
+            926 Dundas St. West
+            %br
+            Toronto ON M6J 1W3
+            %br
+            647 346 9356
+  %script{ src: "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"}
+  %script{ src: "public/assets/js/index.js" }
