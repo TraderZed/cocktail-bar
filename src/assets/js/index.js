@@ -36,6 +36,7 @@ class CocktailBar {
 const cocktailBar = new CocktailBar();
 
 cocktailBar.getContent("hours");
+cocktailBar.getContent("snacks");
 
 cocktailBar.getContent("seasonal", true);
 cocktailBar.getContent("easy-drinking", true);
