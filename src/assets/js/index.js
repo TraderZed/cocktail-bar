@@ -5,9 +5,17 @@ class CocktailBar {
       type: "GET",
       url: `https://the-black-hoof.firebaseio.com/cocktail_bar-${type}.json`,
       success: data => {
-        this.buildMenu(type, data, isCocktail);
+        type === 'hours' ? this.buildHours(data) : this.buildMenu(type, data, isCocktail);
       }
     });
+  }
+  buildHours(data) {
+    console.log(data)
+    const $hoursTable = $(".hoof-info-hours");
+    for (const val of data) {
+      $hoursTable.append(`<tr><td>${val.day}</td><td>${val.hours}</td></tr>`);
+    };
+
   }
   buildMenu(type, data, isCocktail) {
     const $menuList = $(`.cocktail-bar-menu__${type}`).find(".cocktail-bar-menu__list");
@@ -27,14 +35,9 @@ class CocktailBar {
 
 const cocktailBar = new CocktailBar();
 
+cocktailBar.getContent("hours");
+
 cocktailBar.getContent("seasonal", true);
 cocktailBar.getContent("easy-drinking", true);
 cocktailBar.getContent("mainstays", true);
 cocktailBar.getContent("contemporary", true);
-// leSwan.getContent("dessert");
-// leSwan.getContent("milkshakes");
-// leSwan.getContent("white-wine", true);
-// leSwan.getContent("red-wine", true);
-// leSwan.getContent("rose-wine", true);
-// leSwan.getContent("orange-wine", true);
-// leSwan.getContent("sparkling-wine", true);

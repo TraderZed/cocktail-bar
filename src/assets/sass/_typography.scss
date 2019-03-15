@@ -12,4 +12,10 @@ $courier: "Courier", Arial, sans-serif;
 body {
   font-family: $courier;
   font-size: 13px;
+  line-height: 18px;
+}
+
+h1, h2, h3, h4 {
+  font-family: $playfair;
+  font-style: italic;
 }

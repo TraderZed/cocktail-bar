@@ -8,13 +8,16 @@
 @import 'https://fonts.googleapis.com/css?family=Assistant:200|Playfair+Display:400,400i,700,700i';
 body {
   font-family: "Courier", Arial, sans-serif;
-  font-size: 13px; }
+  font-size: 13px;
+  line-height: 18px; }
+
+h1, h2, h3, h4 {
+  font-family: "Playfair Display", serif;
+  font-style: italic; }
 
 html,
 body {
-  height: 100%;
-  font-weight: 100;
-  line-height: 24px; }
+  height: 100%; }
 
 html {
   background: #fffffa; }
@@ -23,6 +26,14 @@ ul {
   padding: 0;
   margin: 0;
   list-style: none; }
+
+address {
+  font-style: normal;
+  text-transform: uppercase; }
+
+.content {
+  margin: 0 auto;
+  max-width: 1024px; }
 
 header {
   background: url("../images/masthead_cocktailbar.jpg") center center no-repeat;
@@ -67,3 +78,51 @@ header {
     flex-direction: column;
     justify-content: center;
     height: 100%; }
+
+.hoof-info {
+  background: url("../images/intro_blackhoof.jpg") 0 0 repeat;
+  color: #fff; }
+  .hoof-info .content {
+    display: flex;
+    padding: 95px 0; }
+  .hoof-info .hoof-info-left,
+  .hoof-info .hoof-info-right {
+    padding: 0 20px; }
+  .hoof-info .hoof-info-left {
+    width: 35%;
+    padding-right: 50px; }
+  .hoof-info .hoof-info-right {
+    width: 65%; }
+  .hoof-info .hoof-intro-copy {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+    margin-bottom: 75px; }
+  .hoof-info .hoof-info-hours {
+    position: relative;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    font-family: "PT Serif", serif;
+    border-bottom: 1px solid #fff;
+    padding: 0 0 20px 0;
+    margin-bottom: 75px; }
+    .hoof-info .hoof-info-hours td:last-child {
+      text-align: right; }
+    .hoof-info .hoof-info-hours:after {
+      position: absolute;
+      content: "* cash and Canadian debit only. No reservations.";
+      font-size: 12px;
+      bottom: -25px; }
+  .hoof-info .btn {
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "PT Serif", serif;
+    display: inline-block;
+    padding: 10px 15px;
+    margin-bottom: 10px; }
+    .hoof-info .btn:hover {
+      background: #d80029;
+      color: #fff; }

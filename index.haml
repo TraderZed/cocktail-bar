@@ -23,9 +23,10 @@
       %section.hoof-info
         .content
           .hoof-info-left
-            %h1 drink well.
-            %p Our take on what a cocktail bar should be. Classic and modern libations, addictive bar snacks and a beautiful environment. We also have a nice wine and beer list, but you should probably have a cocktail.
-            %h2 Come drink.
+            .hoof-intro-copy
+              %h1 drink well.
+              %p Our take on what a cocktail bar should be. Classic and modern libations, addictive bar snacks and a beautiful environment. We also have a nice wine and beer list, but you should probably have a cocktail.
+            %h2 come drink.
             %address
               923 Dundas Street West
               %br
@@ -34,9 +35,12 @@
               %br
               416 792 7511
             %p (before you contact us, you should know that we don't take reservations)
+            %a{href: "#", class: "btn"} Map
           .hoof-info-right
-            %h2 Cocktail Hours
+            %h2 cocktail hours
             %table.hoof-info-hours
+
+            %h2 popular questions
             .hoof-info-links
               %a{href: "#", class: "btn"} What am i drinking
               %br

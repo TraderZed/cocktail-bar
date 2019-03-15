@@ -10,20 +10,24 @@ header {
   background-attachment: fixed;
   height: 100vh;
   position: relative;
+
   nav {
     background: #000;
     position: fixed;
     top: 0; left: 0;
     width: 100%;
     z-index: 1;
+
     ul {
       margin: 0 auto;
       max-width: 1024px;
       overflow: hidden;
+
       li {
         font-size: 11px;
         margin: 0 11px;
         display: inline-block;
+
         a {
           color: #fff;
           display: inline-block;
@@ -31,6 +35,7 @@ header {
           padding: 10px 0;
           text-transform: uppercase;
           text-decoration: none;
+
           &:hover {
             opacity: 1;
           }
@@ -38,6 +43,7 @@ header {
       }
     }
   }
+
   h1 {
     background: url('../images/main_cocktail.png') 0 0 no-repeat;
     height: 80px;
@@ -45,6 +51,7 @@ header {
     text-indent: -999999px;
     width: 350px;
   }
+
   .content {
     position: relative;
     text-align: center;
@@ -52,5 +59,74 @@ header {
     flex-direction: column;
     justify-content: center;
     height: 100%;
+  }
+}
+
+.hoof-info {
+  background: url('../images/intro_blackhoof.jpg') 0 0 repeat;
+  color: #fff;
+
+  .content {
+    display: flex;
+    padding: 95px 0;
+  }
+
+  .hoof-info-left,
+  .hoof-info-right {
+    padding: 0 20px;
+  }
+
+  .hoof-info-left {
+    width: 35%;
+    padding-right: 50px;
+  }
+
+  .hoof-info-right {
+    width: 65%;
+  }
+
+  .hoof-intro-copy {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+    margin-bottom: 75px;
+  }
+
+  .hoof-info-hours {
+    position: relative;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    font-family: $pt;
+    border-bottom: 1px solid #fff;
+    padding: 0 0 20px 0;
+    margin-bottom: 75px;
+
+    td:last-child {
+      text-align: right;
+    }
+
+    &:after {
+      position: absolute;
+      content: "* cash and Canadian debit only. No reservations.";
+      font-size: 12px;
+      bottom: -25px;
+    }
+  }
+
+  .btn {
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: $pt;
+    display: inline-block;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+
+    &:hover {
+      background: #d80029;
+      color: #fff;
+    }
   }
 }
