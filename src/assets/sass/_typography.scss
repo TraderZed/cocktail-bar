@@ -2,99 +2,14 @@
   Fonts
 -------------------------*/
 
-@import url("https://use.typekit.net/rpz3nyz.css");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import 'https://fonts.googleapis.com/css?family=Assistant:200|Playfair+Display:400,400i,700,700i';
 
-$openSans: "Open Sans", sans-serif;
+$pt: 'PT Serif', serif;
+$playfair: 'Playfair Display', serif;
+$assistant: 'Assistant', sans-serif;
+$courier: "Courier", Arial, sans-serif;
 
-.open-sans {
-  font-family: $openSans;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: normal;
-  line-height: 1;
-}
-
-h2 {
-  font-size: 20px;
-  font-family: $openSans;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  a {
-    color: #000;
-    text-decoration: none;
-  }
-  .le-swan-header__box-subtitle {
-    font-size: 14px;
-    font-weight: 100;
-    text-transform: none;
-    letter-spacing: 0;
-  }
-}
-
-h3 {
-  font-size: 46px;
-  margin: 0 0 30px;
-  letter-spacing: 1px;
-  span {
-    display: block;
-    font-size: 20px;
-    font-family: $openSans;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    padding: 10px 0 0;
-  }
-}
-
-h4 {
-  font-size: 28px;
-}
-
-h5 {
-  position: relative;
-  font-size: 36px;
-  margin-bottom: 60px;
-  text-align: center;
-  &::after,
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    height: 50px;
-    width: 50px;
-  }
-  &::after {
-    background: transparent url(../images/embelishment_right.png) 0 0 no-repeat;
-    right: 0;
-  }
-  &::before {
-    background: transparent url(../images/embelishment_left.png) 0 0 no-repeat;
-    left: 0;
-  }
-}
-
-h6 {
-  font-size: 26px;
-  font-family: $openSans;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin: 0 0 20px;
-}
-
-p {
-  font-size: 18px;
-  margin: 0 0 60px 0;
-}
-
-.le-swan-header__subtitle {
-  display: block;
-  font-size: 18px;
-  font-family: $openSans;
-  letter-spacing: 1px;
+body {
+  font-family: $courier;
+  font-size: 13px;
 }
