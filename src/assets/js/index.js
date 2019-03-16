@@ -10,7 +10,6 @@ class CocktailBar {
     });
   }
   buildHours(data) {
-    console.log(data)
     const $hoursTable = $(".hoof-info-hours");
     for (const val of data) {
       $hoursTable.append(`<tr><td>${val.day}</td><td>${val.hours}</td></tr>`);
