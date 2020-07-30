@@ -90,6 +90,8 @@ header {
 .hoof-info {
   background: url("../images/intro_blackhoof.jpg") 0 0 repeat;
   color: #fff; }
+  .hoof-info a {
+    color: #fff; }
   .hoof-info .content {
     display: flex;
     padding: 95px 0; }
