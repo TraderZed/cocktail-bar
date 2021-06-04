@@ -17,6 +17,9 @@ class CocktailBar {
 
   }
   buildMenu(type, data, isCocktail) {
+    if (data == null) {
+      return;
+    }
     const $menuList = $(`.cocktail-bar-menu__${type}`).find(".cocktail-bar-menu__list");
     for (const val of data) {
       $menuList.append(

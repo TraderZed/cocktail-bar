@@ -32,7 +32,7 @@
               %br
               Toronto ON M6J 1W3
             %p
-              To make a reservation, please&nbsp;
+              No reservastions, sorry! For other inquires,&nbsp;
               %a{href: "mailto:hoofcocktailbar@gmail.com", title: "Make a Reservation"} email us!
               &nbsp;We'd also like to remind everyone to bring a mask!
             %a{href: "#map", class: "btn"} Map
@@ -57,16 +57,12 @@
               %h2 Libations
               %p Again, this tasty drink list is fairly accurate, but we can't promise that the drinks listed here will necessarily be available by the time you make it in.
             .cocktail-bar-menu__seasonal
-              %h3 Seasonal
               %ul.cocktail-bar-menu__list
             .cocktail-bar-menu__easy-drinking
-              %h3 Easy Drinking
               %ul.cocktail-bar-menu__list
             .cocktail-bar-menu__mainstays
-              %h3 Mainstays
               %ul.cocktail-bar-menu__list
             .cocktail-bar-menu__contemporary
-              %h3 Contemporary
               %ul.cocktail-bar-menu__list
       %section.hoof-menu-snacks
         %a{name: "snacks"}
@@ -101,3 +97,6 @@
               647 346 9356
   %script{ src: "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"}
   %script{ src: "public/assets/js/index.js" }
+  %script{src: "https://rhumcorner.ambassador.ai/widget/ambassador-chat.js"}
+  :javascript
+    AmbassadorChat.init({ domain: 'rhumcorner.ambassador.ai' });

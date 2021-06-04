@@ -173,6 +173,10 @@ header {
       font-weight: normal;
       letter-spacing: 10px;
     }
+
+    p {
+      margin-bottom: 72px;
+    }
   }
 
   h3 {
@@ -207,6 +211,7 @@ header {
 }
 
 .hoof-menu-snacks {
+  display: none;
   background: url('../images/chalkboard.jpg') 0 0 repeat;
   background-size: cover;
   color: #fff;
