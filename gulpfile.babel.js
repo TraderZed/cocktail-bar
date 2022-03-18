@@ -2,10 +2,11 @@
 
 import gulp from "gulp";
 import haml from "gulp-haml";
-import sass from "gulp-sass";
 import terser from "gulp-terser";
 import autoprefixer from "gulp-autoprefixer";
 import imagemin from "gulp-imagemin";
+
+const sass = require('gulp-sass')(require('sass'));
 
 gulp.task("haml", () => {
   return gulp
@@ -32,7 +33,13 @@ gulp.task("styles", () => {
 gulp.task("images", () => {
   return gulp
     .src("src/assets/images/**")
-    .pipe(imagemin())
+    .pipe(imagemin([
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.mozjpeg({progressive: true}),
+      imagemin.optipng({optimizationLevel: 5})
+    ], {
+      verbose: true
+    }))
     .pipe(gulp.dest("./public/assets/images/"));
 });
 

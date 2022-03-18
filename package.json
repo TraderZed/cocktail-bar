@@ -1,5 +1,5 @@
 {
-  "name": "zackginies",
+  "name": "cocktail-bar",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,13 +11,15 @@
   "devDependencies": {
     "babel-core": "latest",
     "babel-preset-env": "^1.7.0",
-    "gulp": "latest",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "latest",
-    "gulp-imagemin": "latest",
+    "gulp-imagemin": "^7.0.1",
     "gulp-sass": "latest",
-    "gulp-terser": "latest"
+    "gulp-terser": "latest",
+    "sass": "^1.43.2"
   },
   "dependencies": {
-    "gulp-haml": "latest"
+    "gulp-haml": "latest",
+    "jquery": "^3.6.0"
   }
 }
