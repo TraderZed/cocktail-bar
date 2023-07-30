@@ -1,4 +1,4 @@
-@import url(./normalize.css);
+@import "./normalize.css";
 /* -----------------------
   Colors
 -------------------------*/
@@ -9,278 +9,347 @@
 body {
   font-family: "Courier", Arial, sans-serif;
   font-size: 13px;
-  line-height: 18px; }
+  line-height: 18px;
+}
 
 h1, h2, h3, h4 {
   font-family: "Playfair Display", serif;
-  font-style: italic; }
+  font-style: italic;
+}
 
 html,
 body {
-  height: 100%; }
+  height: 100%;
+}
 
 html {
-  background: #fffffa; }
+  background: #fffffa;
+}
 
 ul {
   padding: 0;
   margin: 0;
-  list-style: none; }
+  list-style: none;
+}
 
 address {
   font-style: normal;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .content {
   margin: 0 auto;
-  max-width: 1024px; }
+  max-width: 1024px;
+}
 
 header {
   background: url("../images/masthead_cocktailbar.jpg") center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
-  position: relative; }
-  header nav {
-    background: #000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1; }
-    header nav ul {
-      margin: 0 auto;
-      max-width: 1024px;
-      overflow: hidden; }
-      header nav ul li {
-        font-size: 11px;
-        margin: 0 11px;
-        display: inline-block; }
-        header nav ul li a {
-          color: #fff;
-          display: inline-block;
-          opacity: .5;
-          padding: 10px 0;
-          text-transform: uppercase;
-          text-decoration: none; }
-          header nav ul li a:hover {
-            opacity: 1; }
-  header h1 {
-    background: url("../images/main_cocktail.png") 0 0 no-repeat;
-    height: 80px;
-    margin: 0 auto;
-    text-indent: -999999px;
-    width: 350px; }
-  header .content {
-    position: relative;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%; }
-  header .arrow {
-    background: url("../images/arrown_down_white.png") 0 0 no-repeat;
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    width: 29px;
-    height: 18px;
-    margin-left: -9px; }
+  position: relative;
+}
+header nav {
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+header nav ul {
+  margin: 0 auto;
+  max-width: 1024px;
+  overflow: hidden;
+}
+header nav ul li {
+  font-size: 11px;
+  margin: 0 11px;
+  display: inline-block;
+}
+header nav ul li a {
+  color: #fff;
+  display: inline-block;
+  opacity: 0.5;
+  padding: 10px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  opacity: 1;
+}
+header h1 {
+  background: url("../images/main_cocktail.png") 0 0 no-repeat;
+  height: 80px;
+  margin: 0 auto;
+  text-indent: -999999px;
+  width: 350px;
+}
+header .content {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+header .arrow {
+  background: url("../images/arrown_down_white.png") 0 0 no-repeat;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  width: 29px;
+  height: 18px;
+  margin-left: -9px;
+}
 
 .hoof-info {
   background: url("../images/intro_blackhoof.jpg") 0 0 repeat;
-  color: #fff; }
-  .hoof-info a {
-    color: #fff; }
-  .hoof-info .content {
-    display: flex;
-    padding: 95px 0; }
-  .hoof-info h1 {
-    font-size: 35px; }
-  .hoof-info .hoof-info-left,
-  .hoof-info .hoof-info-right {
-    padding: 0 20px; }
-  .hoof-info .hoof-info-left {
-    width: 35%;
-    padding-right: 50px; }
-  .hoof-info .hoof-info-right {
-    width: 65%; }
-  .hoof-info .hoof-intro-copy {
-    border-bottom: 1px solid #fff;
-    padding-bottom: 20px;
-    margin-bottom: 75px; }
-  .hoof-info .hoof-info-hours {
-    position: relative;
-    width: 100%;
-    color: #fff;
-    font-size: 20px;
-    font-family: "PT Serif", serif;
-    border-bottom: 1px solid #fff;
-    padding: 0 0 20px 0;
-    margin-bottom: 75px; }
-    .hoof-info .hoof-info-hours td:last-child {
-      text-align: right; }
-    .hoof-info .hoof-info-hours:after {
-      position: absolute;
-      content: "* cash and Canadian debit only. No reservations.";
-      font-size: 12px;
-      bottom: -25px; }
-  .hoof-info .btn {
-    background: #fff;
-    color: #000;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-family: "PT Serif", serif;
-    display: inline-block;
-    padding: 10px 15px;
-    margin-bottom: 10px; }
-    .hoof-info .btn:hover {
-      background: #d80029;
-      color: #fff; }
+  color: #fff;
+}
+.hoof-info a {
+  color: #fff;
+}
+.hoof-info .content {
+  display: flex;
+  padding: 95px 0;
+}
+.hoof-info h1 {
+  font-size: 35px;
+}
+.hoof-info .hoof-info-left,
+.hoof-info .hoof-info-right {
+  padding: 0 20px;
+}
+.hoof-info .hoof-info-left {
+  width: 35%;
+  padding-right: 50px;
+}
+.hoof-info .hoof-info-right {
+  width: 65%;
+}
+.hoof-info .hoof-intro-copy {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+  margin-bottom: 75px;
+}
+.hoof-info .hoof-info-hours {
+  position: relative;
+  width: 100%;
+  color: #fff;
+  font-size: 20px;
+  font-family: "PT Serif", serif;
+  border-bottom: 1px solid #fff;
+  padding: 0 0 20px 0;
+  margin-bottom: 75px;
+}
+.hoof-info .hoof-info-hours td:last-child {
+  text-align: right;
+}
+.hoof-info .hoof-info-hours:after {
+  position: absolute;
+  content: "* cash and Canadian debit only. No reservations.";
+  font-size: 12px;
+  bottom: -25px;
+}
+.hoof-info .btn {
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "PT Serif", serif;
+  display: inline-block;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+.hoof-info .btn:hover {
+  background: #d80029;
+  color: #fff;
+}
 
 .hoof-menu-drinks {
   background: url("../images/drinks.jpg") 0 0 repeat;
-  background-size: cover; }
-  .hoof-menu-drinks .content {
-    padding: 65px 0; }
-  .hoof-menu-drinks .cocktail-bar-menu__content {
-    padding: 0 20px; }
-  .hoof-menu-drinks .cocktail-bar-menu__intro {
-    background: url("../images/libations_cocktailbar.png") center no-repeat;
-    text-align: center;
-    padding: 20px 300px; }
-    .hoof-menu-drinks .cocktail-bar-menu__intro h2 {
-      font-size: 40px;
-      font-family: "Playfair Display", serif;
-      text-transform: uppercase;
-      font-weight: normal;
-      letter-spacing: 10px; }
-    .hoof-menu-drinks .cocktail-bar-menu__intro p {
-      margin-bottom: 72px; }
-  .hoof-menu-drinks h3 {
-    padding: 0 0 15px 0;
-    margin: 65px 0 30px 0;
-    font-size: 30px;
-    font-family: "Playfair Display", serif;
-    font-weight: normal;
-    border-bottom: 1px solid #000; }
-  .hoof-menu-drinks .cocktail-bar-menu__list-item {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 35px;
-    width: 100%; }
-  .hoof-menu-drinks .cocktail-bar-menu__list-item-name {
-    padding: 0 0 5px 0;
-    font-size: 24px;
-    font-family: "PT Serif", serif; }
-    .hoof-menu-drinks .cocktail-bar-menu__list-item-name span {
-      padding: 10px 0 0 0;
-      display: block;
-      font-size: 13px;
-      line-height: 16px;
-      font-family: "Courier", Arial, sans-serif; }
+  background-size: cover;
+}
+.hoof-menu-drinks .content {
+  padding: 65px 0;
+}
+.hoof-menu-drinks .cocktail-bar-menu__content {
+  padding: 0 20px;
+}
+.hoof-menu-drinks .cocktail-bar-menu__intro {
+  background: url("../images/libations_cocktailbar.png") center no-repeat;
+  text-align: center;
+  padding: 20px 300px;
+}
+.hoof-menu-drinks .cocktail-bar-menu__intro h2 {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 10px;
+}
+.hoof-menu-drinks .cocktail-bar-menu__intro p {
+  margin-bottom: 72px;
+}
+.hoof-menu-drinks h3 {
+  padding: 0 0 15px 0;
+  margin: 65px 0 30px 0;
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  border-bottom: 1px solid #000;
+}
+.hoof-menu-drinks .cocktail-bar-menu__list-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  width: 100%;
+}
+.hoof-menu-drinks .cocktail-bar-menu__list-item-name {
+  padding: 0 0 5px 0;
+  font-size: 24px;
+  font-family: "PT Serif", serif;
+}
+.hoof-menu-drinks .cocktail-bar-menu__list-item-name span {
+  padding: 10px 0 0 0;
+  display: block;
+  font-size: 13px;
+  line-height: 16px;
+  font-family: "Courier", Arial, sans-serif;
+}
 
 .hoof-menu-snacks {
-  display: none;
   background: url("../images/chalkboard.jpg") 0 0 repeat;
   background-size: cover;
   color: #fff;
-  font-family: "Assistant", sans-serif; }
-  .hoof-menu-snacks h2 {
-    font-family: "Assistant", sans-serif;
-    text-transform: uppercase;
-    font-style: normal;
-    font-size: 50px;
-    margin-top: 0; }
-  .hoof-menu-snacks .content {
-    padding: 65px 0;
-    text-align: center; }
-  .hoof-menu-snacks .cocktail-bar-menu__content {
-    padding: 0 20px; }
-    .hoof-menu-snacks .cocktail-bar-menu__content ul {
-      font-size: 30px;
-      text-transform: uppercase;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border-top: 1px solid #fff;
-      border-bottom: 1px solid #fff;
-      margin: 0 100px;
-      padding: 50px 0; }
-      .hoof-menu-snacks .cocktail-bar-menu__content ul li {
-        display: flex;
-        justify-content: space-between;
-        margin: 10px 0;
-        width: 50%; }
+  font-family: "Assistant", sans-serif;
+}
+.hoof-menu-snacks h2 {
+  font-family: "Assistant", sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 50px;
+  margin-top: 0;
+}
+.hoof-menu-snacks .content {
+  padding: 65px 0;
+  text-align: center;
+}
+.hoof-menu-snacks .cocktail-bar-menu__content {
+  padding: 0 20px;
+}
+.hoof-menu-snacks .cocktail-bar-menu__content ul {
+  font-size: 30px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  margin: 0 100px;
+  padding: 50px 0;
+}
+.hoof-menu-snacks .cocktail-bar-menu__content ul li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  width: 50%;
+}
 
 footer {
   background: url("../images/intro_blackhoof.jpg") 0 0 repeat;
-  color: #fff; }
-  footer .content {
-    display: flex;
-    padding: 80px 0; }
-  footer .footer-left,
-  footer .footer-right {
-    padding: 0 20px; }
-  footer .footer-left {
-    width: 20%;
-    padding-right: 50px; }
-    footer .footer-left .btn {
-      background: #fff;
-      color: #000;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 16px;
-      font-family: "PT Serif", serif;
-      display: inline-block;
-      padding: 10px 15px;
-      margin-bottom: 10px; }
-      footer .footer-left .btn:hover {
-        background: #d80029;
-        color: #fff; }
-  footer .footer-right {
-    background: url("../images/map.gif") right center no-repeat;
-    width: 80%;
-    height: 500px;
-    position: relative; }
-    footer .footer-right .cocktail {
-      position: absolute;
-      right: 0;
-      top: 245px; }
-    footer .footer-right .rhum {
-      position: absolute;
-      right: 50px;
-      top: -20px; }
+  color: #fff;
+}
+footer .content {
+  display: flex;
+  padding: 80px 0;
+}
+footer .footer-left,
+footer .footer-right {
+  padding: 0 20px;
+}
+footer .footer-left {
+  width: 20%;
+  padding-right: 50px;
+}
+footer .footer-left .btn {
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "PT Serif", serif;
+  display: inline-block;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+footer .footer-left .btn:hover {
+  background: #d80029;
+  color: #fff;
+}
+footer .footer-right {
+  background: url("../images/map.gif") right center no-repeat;
+  width: 80%;
+  height: 500px;
+  position: relative;
+}
+footer .footer-right .cocktail {
+  position: absolute;
+  right: 0;
+  top: 245px;
+}
+footer .footer-right .rhum {
+  position: absolute;
+  right: 50px;
+  top: -20px;
+}
 
 @media only screen and (max-width: 900px) {
   .hoof-info .content {
-    flex-direction: column; }
+    flex-direction: column;
+  }
   .hoof-info .hoof-info-left,
-  .hoof-info .hoof-info-right {
+.hoof-info .hoof-info-right {
     width: 90%;
-    padding: 0 5%; }
+    padding: 0 5%;
+  }
   .hoof-info .hoof-info-left {
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+  }
+
   .hoof-menu-drinks .content {
-    padding: 65px 0; }
+    padding: 65px 0;
+  }
   .hoof-menu-drinks .cocktail-bar-menu__content {
-    padding: 0 20px; }
+    padding: 0 20px;
+  }
   .hoof-menu-drinks .cocktail-bar-menu__intro {
     background: none;
-    padding: 20px 0; }
+    padding: 20px 0;
+  }
+
   .hoof-menu-snacks .cocktail-bar-menu__content ul {
-    margin: 0; }
-    .hoof-menu-snacks .cocktail-bar-menu__content ul li {
-      width: 100%; }
+    margin: 0;
+  }
+  .hoof-menu-snacks .cocktail-bar-menu__content ul li {
+    width: 100%;
+  }
+
   footer .content {
-    flex-direction: column; }
+    flex-direction: column;
+  }
   footer .footer-left,
-  footer .footer-right {
-    padding: 0 20px; }
+footer .footer-right {
+    padding: 0 20px;
+  }
   footer .footer-left {
     width: 90%;
     padding: 0 5%;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+  }
   footer .footer-right {
-    display: none; } }
+    display: none;
+  }
+}
