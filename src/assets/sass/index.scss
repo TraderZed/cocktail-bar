@@ -211,6 +211,14 @@ header {
   }
 }
 
+.cocktail-bar-menu__spirit-free {
+  h2 {
+    border-bottom: 1px solid #666;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+  }
+}
+
 .hoof-menu-snacks {
   background: url('../images/chalkboard.jpg') 0 0 repeat;
   background-size: cover;

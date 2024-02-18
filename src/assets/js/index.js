@@ -35,7 +35,6 @@ class CocktailBar {
   randomImage() {
     const $element = $(".header");
     var images = [
-      'public/assets/images/ice.jpg',
       'public/assets/images/leaf.jpg',
       'public/assets/images/pour.jpg',
       'public/assets/images/slash.jpg'
