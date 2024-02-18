@@ -43,7 +43,8 @@ address {
 }
 
 header {
-  background: url("../images/masthead_cocktailbar.jpg") center center no-repeat;
+  background: center center no-repeat;
+  background-color: #000;
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;

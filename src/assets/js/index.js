@@ -14,7 +14,6 @@ class CocktailBar {
     for (const val of data) {
       $hoursTable.append(`<tr><td>${val.day}</td><td>${val.hours}</td></tr>`);
     };
-
   }
   buildMenu(type, data, isCocktail) {
     if (data == null) {
@@ -33,14 +32,30 @@ class CocktailBar {
       );
     }
   }
+  randomImage() {
+    const $element = $(".header");
+    var images = [
+      'public/assets/images/ice.jpg',
+      'public/assets/images/leaf.jpg',
+      'public/assets/images/pour.jpg',
+      'public/assets/images/slash.jpg'
+    ];
+    var size = images.length;
+    var x = Math.floor(size * Math.random());
+
+    $element[0].style["background-image"] = "url("+ images[x] + ")";
+  }
 }
 
 const cocktailBar = new CocktailBar();
+
+cocktailBar.randomImage();
 
 cocktailBar.getContent("hours");
 cocktailBar.getContent("snacks");
 
 cocktailBar.getContent("seasonal", true);
+cocktailBar.getContent("spirit-free", true);
 cocktailBar.getContent("easy-drinking", true);
 cocktailBar.getContent("mainstays", true);
 cocktailBar.getContent("contemporary", true);
