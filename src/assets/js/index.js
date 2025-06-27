@@ -24,9 +24,9 @@ class CocktailBar {
       $menuList.append(
         `<li class='cocktail-bar-menu__list-item'><span class="cocktail-bar-menu__list-item-name">${
           val.name
-        }${
-          isCocktail ? `<span>${val.description}</span>` : ""
-        }</span><span class="cocktail-bar-menu__list-item-price">${
+        }</span>${
+          isCocktail ? `<span class="cocktail-bar-menu__list-item-description">${val.description}</span>` : ""
+        }<span class="cocktail-bar-menu__list-item-price">${
           val.price
         }</span></li>`
       );

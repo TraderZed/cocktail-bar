@@ -2,17 +2,21 @@
   Fonts
 -------------------------*/
 
-@import 'https://fonts.googleapis.com/css?family=Assistant:200|Playfair+Display:400,400i,700,700i';
+@import 'https://fonts.googleapis.com/css?family=Assistant:200';
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap';
 
 $pt: 'PT Serif', serif;
+$montserrat: 'Montserrat', sans-serif;
+$baskervville: 'Baskervville', sans-serif;
 $playfair: 'Playfair Display', serif;
 $assistant: 'Assistant', sans-serif;
 $courier: "Courier", Arial, sans-serif;
 
 body {
-  font-family: $courier;
-  font-size: 13px;
-  line-height: 18px;
+  font-family: $montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
 }
 
 h1, h2, h3, h4 {
